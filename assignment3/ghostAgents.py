@@ -94,7 +94,6 @@ class MinimaxGhost(GhostAgent):
     """
     "*** YOUR CODE HERE ***"
     def __init__(self, index, evalFun='scoreEvaluationFunctionGhost', depth='2'):
-        super().__init__(index)
         self.index = index
         self.evaluationFunction = util.lookup(evalFun, globals())
         self.depth = int(depth)
